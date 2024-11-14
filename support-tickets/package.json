@@ -1,0 +1,12 @@
+{
+  "name": "support-tickets",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  },
+  "type": "module",  
+  "author": "Roberto Nicoletti",
+  "license": "ISC",
+  "description": "API de abertura de tickets"
+}
