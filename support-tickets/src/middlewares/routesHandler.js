@@ -1,4 +1,4 @@
-import { routes } from "../routes";
+import { routes } from "../routes/index.js";
 
 export function routesHandler(request, response) {
   const route = routes.find((route) => {
