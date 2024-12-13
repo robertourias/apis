@@ -1,7 +1,13 @@
 export function update({ request, response, database }) {
   const { id } = request.params
-  const { equipment, description, user_name } = request.body
+  const { equipment, description } = request.body
 
-  return response.end(user_name)
+  database.update("tickets", id, {
+    equipment,
+    description,
+    updated_at: new Date(),
+  })
+
+  return response.end()
   // return response.end(JSON.stringify(request.params))
 }
